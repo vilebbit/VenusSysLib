@@ -6,6 +6,13 @@ export enum AccessoryCategoryType {
   Part2 = 2,
 }
 
+export enum AccessoryEnhanceMaterialType {
+  Unknown = 0,
+  ExcludeAllDeck = 1,
+  ExcludeLeagueDeck = 2,
+  AllUserAccessory = 3,
+}
+
 export enum AccessoryParameterType {
   Unknown = 0,
   Dance = 1,
@@ -57,6 +64,12 @@ export enum ActivityFanEventType {
   Handshake = 1,
   Sign = 2,
   PhotoSession = 3,
+}
+
+export enum AnniversaryTransitionActionType {
+  Unknown = 0,
+  Exit = 1,
+  Contents = 2,
 }
 
 export enum AreaType {
@@ -150,6 +163,7 @@ export enum CardDisplayType {
   Unknown = 0,
   BeforeLimitBreak = 1,
   AfterLimitBreak = 2,
+  AfterEvolution = 3,
 }
 
 export enum CardImageType {
@@ -201,6 +215,35 @@ export enum CharacterType {
   Collaboration = 4,
 }
 
+export enum CompanyEnjoyCharacterMissionCategoryType {
+  Unknown = 0,
+  Enjoy = 1,
+  Training = 2,
+  Action = 3,
+}
+
+export enum CompanyEnjoyObtainPointItemGrowthType {
+  Unknown = 0,
+  _1 = 1,
+  _2 = 2,
+  _3 = 3,
+}
+
+export enum CompanyPointType {
+  Unknown = 0,
+  Enjoy = 1,
+  Trust = 2,
+  Salary = 3,
+}
+
+export enum CompanyTrustMissionCategoryType {
+  Unknown = 0,
+  Area = 1,
+  TowerArea = 2,
+  PhotoShooting = 3,
+  Growth = 4,
+}
+
 export enum DayOfWeekType {
   Unknown = 0,
   Sunday = 1,
@@ -218,6 +261,37 @@ export enum DeckEditType {
   Auto = 2,
   ManualAuto = 3,
   QuestAuto = 4,
+}
+
+export enum DiceItemType {
+  Unknown = 0,
+  AdvancePanel = 1,
+  WarpShopPanel = 2,
+  ExchangeMoney = 3,
+}
+
+export enum DicePanelType {
+  Unknown = 0,
+  Start = 1,
+  AdvancePanel = 2,
+  ObtainMedal = 3,
+  Shop = 4,
+  Story = 5,
+  Quest = 6,
+  ObtainMoney = 7,
+  ObtainLiveBonus = 8,
+  BattleQuest = 9,
+  GoalQuest = 10,
+  ForceStory = 11,
+}
+
+export enum DiceQuestDifficultyType {
+  Unknown = 0,
+  VeryEasy = 1,
+  Easy = 2,
+  Normal = 3,
+  Hard = 4,
+  VeryHard = 5,
 }
 
 export enum DivisionCannotMoveReasonType {
@@ -239,6 +313,14 @@ export enum DokanTargetType {
   PhotoContest = 6,
   Race = 7,
   Ladder = 8,
+  Love = 9,
+  Dream = 10,
+  Dice = 11,
+  Duty = 12,
+  ShowcaseToyShop = 13,
+  Company = 14,
+  ShowcaseTop = 15,
+  PhotoExpression = 16,
 }
 
 export enum DokanType {
@@ -251,6 +333,16 @@ export enum DokanType {
   HorizontalMovie = 6,
   Story = 7,
   Free = 8,
+}
+
+export enum DreamAreaRankType {
+  Unknown = 0,
+  D = 1,
+  C = 2,
+  B = 3,
+  A = 4,
+  S = 5,
+  Splus = 6,
 }
 
 export enum ErrorCode {
@@ -299,6 +391,8 @@ export enum ErrorCode {
   LeagueInBattle = 3035,
   LeagueInBattleExtension = 3036,
   SpecialPhotoShootingConditionInvalid = 3037,
+  LoveSeasonNotOpened = 3038,
+  GppReceiveRewardFailed = 3039,
 }
 
 export enum EventMissionType {
@@ -317,6 +411,12 @@ export enum ExtraStoryPartType {
   Unknown = 0,
   Normal = 1,
   Limited = 2,
+}
+
+export enum ExtraStoryType {
+  Unknown = 0,
+  Story = 1,
+  Theater = 2,
 }
 
 export enum ForumListReplyRequestType {
@@ -361,6 +461,23 @@ export enum FunctionLockType {
   CardRankUp = 29,
   League = 30,
   LiveResultDetail = 31,
+  Birthday = 32,
+  StoryPointDisplayHide = 33,
+  HomeNewStoryButtonDisplayChange = 34,
+  PhotoListFilterDream = 35,
+  Roulette = 36,
+  PhotoShootingStory = 37,
+  HomeRenewal = 38,
+  Company = 39,
+  Showcase = 40,
+  ShowcaseGallery = 41,
+  StaffLevelLimitBreak = 42,
+  ShowcaseLike = 43,
+  QuestContestMultipleTicketsPlay = 44,
+  CompanyBulkReceive = 45,
+  CardEvolution = 46,
+  PhotoExpressionShooting = 47,
+  Satellite = 50,
 }
 
 export enum FunctionMaintenanceType {
@@ -410,6 +527,7 @@ export enum GachaType {
   Premium = 3,
   Continuous = 4,
   Stamp = 5,
+  ShowcaseToy = 6,
 }
 
 export enum GiftFilterType {
@@ -621,6 +739,71 @@ export enum HelpDisplayTargetType {
   SpecialPhotographyTop = 167,
   SpecialLivePhotography = 168,
   SpecialActivityPhotography = 169,
+  LoveEpisodeList = 170,
+  LoveHome = 171,
+  LoveSave = 172,
+  LoveLoad = 173,
+  LoveMission = 174,
+  LoveSetting = 175,
+  LoveStatus = 176,
+  BirthdayTop = 177,
+  TheaterTop = 178,
+  DreamTop = 179,
+  DreamGeneratePhotoSelect = 180,
+  DreamGenerateMaterialSelect = 181,
+  DreamTrainingPhotoSelect = 182,
+  DreamLiveQuestSelect = 183,
+  DreamLiveDeckSelect = 184,
+  LoveCharacterSelect = 185,
+  Mosaic = 186,
+  DiceMain = 187,
+  DiceShop = 188,
+  DiceStory = 189,
+  DiceTop = 190,
+  DiceLiveDeckSelect = 191,
+  DiceLiveQuestSelect = 192,
+  DiceLiveBattleDeckSelect = 193,
+  DiceLiveBattleQuestSelect = 194,
+  RouletteTop = 195,
+  ShelfTop = 196,
+  ShelfAlbumSelect = 197,
+  ShelfHome = 198,
+  StoryPhotography = 199,
+  GroupStoryPhotography = 200,
+  CardStoryPhotography = 201,
+  StoryPhotographySelect = 202,
+  StoryPhotographyResult = 203,
+  DutyTop = 204,
+  CompanyReward = 205,
+  CompanyTop = 206,
+  CompanyEnjoyMemory = 207,
+  CompanyEnjoyMission = 208,
+  CompanyEnjoyPortal = 209,
+  CompanyEnjoyReward = 210,
+  CompanyEnjoyTop = 211,
+  CompanyTrustMissionList = 212,
+  CompanyTrustTop = 213,
+  CompanyRanking = 214,
+  CompanyTrustReward = 215,
+  ShowcaseTop = 216,
+  ShowcaseToyShopTop = 217,
+  ShowcaseToyCatalog = 218,
+  ShowcaseGallery = 220,
+  ShowcaseList = 221,
+  ShowcaseMain = 222,
+  ShowcaseEdit = 223,
+  ShowcaseToySelect = 224,
+  ShowcaseToyList = 225,
+  ShowcaseToyGacha = 229,
+  CompanyEnjoyRanking = 230,
+  ExpressionPhotography = 231,
+  LoveExtraEpisodeList = 232,
+  LoveExtraHome = 233,
+  LoveExtraSave = 234,
+  LoveExtraLoad = 235,
+  LoveExtraMission = 236,
+  LoveExtraSetting = 237,
+  LoveExtraStatus = 238,
 }
 
 export enum HelpType {
@@ -641,6 +824,12 @@ export enum HomeActionType {
   Unknown = 0,
   Tap = 1,
   NonTap = 2,
+}
+
+export enum HomeBackgroundVersionType {
+  Unknown = 0,
+  _1 = 1,
+  _2 = 2,
 }
 
 export enum HomePlaceType {
@@ -683,6 +872,7 @@ export enum ItemType {
   PhotoInk = 15,
   CardRank = 16,
   SpecialPhotoShooting = 17,
+  StaffLevelLimitBreak = 18,
   ActivityRefreshShorten = 1001,
   ActivityPromotionShorten = 1002,
   ActivityFanEventSuperMode = 1003,
@@ -707,6 +897,14 @@ export enum ItemType {
   RacePoint = 7001,
   RaceLiveBonusReset = 7002,
   LadderPoint = 8001,
+  LoveStoryRead = 9001,
+  LoveHiddenFavorabilityObtain = 9002,
+  LoveLessonPromote = 9003,
+  DreamGenerateArea = 10001,
+  DiceShopCurrency = 11001,
+  DiceStaminaRecovery = 11002,
+  EventPhotoCreating = 12001,
+  CompanyEnjoyObtainPoint = 13001,
 }
 
 export enum JoinedGuildType {
@@ -788,6 +986,8 @@ export enum LinkType {
   Friend = 35,
   Market = 36,
   Forum = 37,
+  PhotoStory = 38,
+  PhotoExpression = 39,
   EventMission = 100,
   Tour = 101,
   Backside = 102,
@@ -795,6 +995,17 @@ export enum LinkType {
   PhotoContest = 104,
   Race = 105,
   Ladder = 106,
+  Love = 107,
+  Birthday = 108,
+  ProfileFavoriteCharacter = 109,
+  Dream = 110,
+  Dice = 111,
+  Shelf = 112,
+  Roulette = 113,
+  Duty = 114,
+  Showcase = 115,
+  ShowcaseToyShop = 116,
+  ExtraStory = 117,
   WebView = 999,
   ExternalWebPage = 1000,
 }
@@ -892,6 +1103,7 @@ export enum LoadingDisplayTargetType {
   QuestGvgAfter = 210,
   QuestDailyAreaBefore = 211,
   QuestDailyAreaAfter = 212,
+  DreamAreaBefore = 213,
   PhotoModeBefore = 301,
   PhotoModeAfter = 302,
   Other = 999,
@@ -909,9 +1121,35 @@ export enum LoadingType {
   Text = 4,
   ImageText = 5,
   Comic = 6,
+  Dream = 7,
 }
 
 export enum LoginBonusType {
+  Unknown = 0,
+  Normal = 1,
+  Event = 2,
+}
+
+export enum LoveBaseType {
+  Unknown = 0,
+  Standard = 1,
+  Extra = 2,
+}
+
+export enum LoveHintType {
+  Unknown = 0,
+  ChoiceGroup = 1,
+  Choice = 2,
+}
+
+export enum LoveHomeActionType {
+  Unknown = 0,
+  Tap = 1,
+  NonTap = 2,
+  Present = 3,
+}
+
+export enum LoveType {
   Unknown = 0,
   Normal = 1,
   Event = 2,
@@ -1048,6 +1286,28 @@ export enum MissionType {
   PhotoRecipeUsedAmount = 63,
   StoneUsedAmount = 64,
   PaidStoneUsedAmount = 65,
+  CharacterQuestAllClearCount = 66,
+  CharacterQuestPvpPlayCount = 67,
+  CharacterPhotoShootCount = 68,
+  CharacterStartActivityFanEventCount = 69,
+  CharacterStartActivityPromotionCount = 70,
+  CharacterStartActivityRefreshmentCount = 71,
+  PhotoShootingStoryShootTotalCount = 72,
+  PhotoActivateShootingStoryTicketUseTotalCount = 73,
+  PhotoActivateShootingStoryTicketUseCount = 74,
+  QuestAllScoreAchievement = 75,
+  CharacterHomeTalkReadAchievement = 76,
+  CharacterTotalCardLevelAchievement = 77,
+  CharacterTotalCardRarityAchievement = 78,
+  CharacterTotalCardSkillLevelAchievement = 79,
+  CharacterQuestContestScoreAchievement = 80,
+  CharacterQuestPvpScoreAchievement = 81,
+  AreaAllMainQuestClearCountAchievement = 82,
+  AreaAllTowerQuestClearCountAchievement = 83,
+  AreaSubTowerQuestClearCountAchievement = 84,
+  PhotoExpressionShootingCount = 86,
+  PhotoExpressionShootingSpecifiedPoseShootCount = 87,
+  PhotoExpressionShootingSpecifiedCharacterShootCount = 88,
   TourAreaClearCount = 1001,
   TourRivalClearCount = 1002,
   TourBossClearCountWithCharacter = 1003,
@@ -1069,6 +1329,32 @@ export enum MissionType {
   LadderPanelReachedCount = 1401,
   LadderConsumptionPointAmount = 1402,
   LadderReachedStep = 1403,
+  LoveLevelAchievement = 1501,
+  LoveStoryEndUnlockCount = 1502,
+  DreamAreaGenerateCount = 1601,
+  DreamAreaGenerateTotalCount = 1602,
+  DreamQuestClearCount = 1603,
+  DreamQuestClearTotalCount = 1604,
+  DreamQuestClearDifficultyLevelAchievement = 1605,
+  DreamSeasonQuestClearDifficultyLevelAchievement = 1606,
+  MosaicExchangedCount = 1701,
+  DicePanelMoveCount = 1801,
+  DiceAreaClearCount = 1802,
+  ShelfPhotoSaveCount = 1901,
+  ShelfPhotoCreatingCount = 1902,
+  ShelfAlbumCompleteAchievement = 1903,
+  ShelfAlbumPhotoCreatingCount = 1904,
+  RouletteDrawCount = 2001,
+  DutySpecifiedExchangedRewardCount = 2101,
+  DutyExchangedRewardCount = 2102,
+  DutyPointAmount = 2103,
+  ShowcaseLikedTotalCount = 2201,
+  ShowcaseLikeTotalCount = 2202,
+  ShowcaseSaveAchievement = 2203,
+  ShowcasePhotoShootingTotalCount = 2204,
+  ShowcaseSpecifiedHashtagIdSaveCount = 2205,
+  CompanyCharacterUseObtainEnjoyPointItemCount = 2301,
+  CompanyUseObtainEnjoyPointItemTotalCount = 2302,
 }
 
 export enum MoodType {
@@ -1215,11 +1501,32 @@ export enum PhotoImageType {
   Generated = 3,
 }
 
+export enum PhotoLookingType {
+  Unknown = 0,
+  None = 1,
+  Eyes = 2,
+  Body = 3,
+}
+
+export enum PhotoPoseMotionType {
+  Unknown = 0,
+  Motion = 1,
+  OneFrame = 2,
+}
+
+export enum PhotoPoseType {
+  Unknown = 0,
+  Standing = 1,
+  Sitting = 2,
+  Lying = 3,
+}
+
 export enum PhotoShootingActionType {
   Unknown = 0,
   ActivityPromotion = 1,
   ActivityRefresh = 2,
   Quest = 3,
+  Story = 4,
 }
 
 export enum PhotoShootingMotionType {
@@ -1242,6 +1549,7 @@ export enum PointType {
   GroupStory = 4,
   GuildMedal = 5,
   PvpMedal = 6,
+  ActivatePhotoShootingStoryTicket = 7,
 }
 
 export enum ProfileBackgroundType {
@@ -1362,6 +1670,12 @@ export enum ResourceType {
   Decoration = 26,
   PhotoRecipe = 27,
   Hair = 28,
+  ActivatePhotoShootingStoryTicket = 29,
+  DutyPoint = 30,
+  CompanyPoint = 31,
+  ShowcaseToy = 32,
+  ShowcaseMusic = 33,
+  PhotoPose = 34,
   Set = 999,
 }
 
@@ -1441,6 +1755,18 @@ export enum RewardSortResourceType {
   ItemActivityLessonPromote = 63,
   ItemActivityPromotionSpecialShorten = 65,
   ItemCardRank = 66,
+  ItemLoveStoryRead = 67,
+  ItemLoveHiddenFavorabilityObtain = 68,
+  ItemLoveLessonPromote = 69,
+  ItemDreamGenerateArea = 70,
+  ItemShelfPhotoCreating = 71,
+  ActivatePhotoShootingStoryTicket = 72,
+  DutyPoint = 73,
+  CompanyPoint = 74,
+  ItemCompanyEnjoyObtainPoint = 75,
+  ShowcaseToy = 76,
+  ShowcaseMusic = 77,
+  PhotoPose = 78,
 }
 
 export enum RewardSortTargetType {
@@ -1460,6 +1786,50 @@ export enum RewardSortTargetType {
   MarathonRaidQuestReward = 13,
 }
 
+export enum RouletteBackgroundColorType {
+  Unknown = 0,
+  Normal = 1,
+  Rare = 2,
+  Srare = 3,
+}
+
+export enum RouletteButtonColorType {
+  Unknown = 0,
+  Normal = 1,
+  Rare = 2,
+  Srare = 3,
+}
+
+export enum RouletteCharacterType {
+  Unknown = 0,
+  Normal = 1,
+  Rare = 2,
+  Srare = 3,
+}
+
+export enum RouletteObtainEffectType {
+  Unknown = 0,
+  Normal = 1,
+  Rare = 2,
+  Srare = 3,
+}
+
+export enum RouletteRarityType {
+  Unknown = 0,
+  D = 1,
+  C = 2,
+  B = 3,
+  A = 4,
+  S = 5,
+}
+
+export enum RouletteSpecialEffectType {
+  Unknown = 0,
+  None = 1,
+  Reversal = 2,
+  Secret = 3,
+}
+
 export enum RuleType {
   Unknown = 0,
   Usage = 1,
@@ -1468,6 +1838,7 @@ export enum RuleType {
   CommercialTransaction = 4,
   ServiceGuideline = 5,
   Licence = 6,
+  ExternalTransmission = 7,
 }
 
 export enum SalaryDetailType {
@@ -1502,6 +1873,20 @@ export enum ScreenChangeVoiceType {
   TourTop = 16,
 }
 
+export enum ShelfTemplateType {
+  Unknown = 0,
+  Template1 = 1,
+  Template2 = 2,
+  Template3 = 3,
+  Template4 = 4,
+  Template5 = 5,
+  Template6 = 6,
+  Template7 = 7,
+  Template8 = 8,
+  Template9 = 9,
+  Template10 = 10,
+}
+
 export enum ShopConditionRewardStatusType {
   Unknown = 0,
   InProgress = 1,
@@ -1515,8 +1900,23 @@ export enum ShopType {
   NormalShop = 2,
   LoginBonusShop = 3,
   ConditionRewardShop = 4,
+  ShowcaseToyShop = 5,
   DefaultStoneShop = 1001,
   DefaultNormalShop = 1002,
+  DefaultShowcaseToyShop = 1003,
+  OnlyShowcaseShop = 2001,
+}
+
+export enum ShowcaseHashtagCategoryType {
+  Unknown = 0,
+  Group = 1,
+  Character = 2,
+}
+
+export enum ShowcaseToyPutType {
+  Unknown = 0,
+  Floor = 1,
+  Wall = 2,
 }
 
 export enum SimpleCharacterPersonalityType {
@@ -1626,6 +2026,40 @@ export enum SkillEfficacyType {
   PassiveSkillCoolTimeReset = 73,
   PassiveSkillImpossible = 74,
   CoverWeaknessEffect = 75,
+  LimitBreakDanceUp = 76,
+  LimitBreakVocalUp = 77,
+  LimitBreakVisualUp = 78,
+  LimitBreakBeatScoreUp = 79,
+  LimitBreakActiveSkillScoreUp = 80,
+  LimitBreakCriticalBonusPermilUp = 81,
+  LimitBreakAudienceAmountIncrease = 82,
+  LimitBreakSpecialSkillScoreUp = 83,
+  LimitBreakSkillSuccessRateUp = 84,
+  LimitBreakTensionUp = 85,
+  LimitBreakComboScoreUp = 86,
+  LimitBreakPassiveSkillScoreUp = 87,
+  LimitBreakVocalBoost = 88,
+  LimitBreakDanceBoost = 89,
+  LimitBreakVisualBoost = 90,
+  LimitBreakAudienceAmountReduction = 91,
+  LimitBreakScoreUp = 92,
+  AddEffectValueScoreUp = 93,
+  AddEffectValueDanceUp = 94,
+  AddEffectValueVocalUp = 95,
+  AddEffectValueVisualUp = 96,
+  AddEffectValueBeatScoreUp = 97,
+  AddEffectValueActiveSkillScoreUp = 98,
+  AddEffectValueCriticalBonusPermilUp = 99,
+  AddEffectValueAudienceAmountIncrease = 100,
+  AddEffectValueSpecialSkillScoreUp = 101,
+  AddEffectValueSkillSuccessRateUp = 102,
+  AddEffectValuePassiveSkillScoreUp = 103,
+  AddEffectValueAudienceAmountReduction = 104,
+  AddEffectValueDanceDown = 105,
+  AddEffectValueVocalDown = 106,
+  AddEffectValueVisualDown = 107,
+  WeaknessEffectReflection = 108,
+  BeatBoost = 109,
 }
 
 export enum SkillFailureType {
@@ -1637,6 +2071,7 @@ export enum SkillFailureType {
   InSkillImpossibleEffect = 5,
   OpponentActivation = 6,
   Miss = 7,
+  AllSkillEfficacyTriggerFail = 8,
 }
 
 export enum SkillPossessionType {
@@ -1674,6 +2109,13 @@ export enum SkillTargetType {
   OpponentCardType = 23,
   OpponentAll = 24,
   OpponentSamePosition = 25,
+  OpponentVocal = 26,
+  OpponentDance = 27,
+  OpponentVisual = 28,
+  OpponentStatus = 29,
+  OpponentPositionAttributeVocal = 30,
+  OpponentPositionAttributeDance = 31,
+  OpponentPositionAttributeVisual = 32,
 }
 
 export enum SkillTriggerType {
@@ -1783,6 +2225,37 @@ export enum StatusEffectType {
   StaminaContinuousRecovery = 24,
   ActiveSkillChanceAssignment = 25,
   CoverWeaknessEffect = 26,
+  LimitBreakDanceUp = 27,
+  LimitBreakVocalUp = 28,
+  LimitBreakVisualUp = 29,
+  LimitBreakBeatScoreUp = 30,
+  LimitBreakActiveSkillScoreUp = 31,
+  LimitBreakCriticalBonusPermilUp = 32,
+  LimitBreakAudienceAmountIncrease = 33,
+  LimitBreakSpecialSkillScoreUp = 34,
+  LimitBreakSkillSuccessRateUp = 35,
+  LimitBreakTensionUp = 36,
+  LimitBreakComboScoreUp = 37,
+  LimitBreakPassiveSkillScoreUp = 38,
+  LimitBreakVocalBoost = 39,
+  LimitBreakDanceBoost = 40,
+  LimitBreakVisualBoost = 41,
+  LimitBreakAudienceAmountReduction = 42,
+  LimitBreakScoreUp = 43,
+  AddEffectValueScoreUp = 44,
+  AddEffectValueDanceUp = 45,
+  AddEffectValueVocalUp = 46,
+  AddEffectValueVisualUp = 47,
+  AddEffectValueBeatScoreUp = 48,
+  AddEffectValueActiveSkillScoreUp = 49,
+  AddEffectValueCriticalBonusPermilUp = 50,
+  AddEffectValueAudienceAmountIncrease = 51,
+  AddEffectValueSpecialSkillScoreUp = 52,
+  AddEffectValueSkillSuccessRateUp = 53,
+  AddEffectValuePassiveSkillScoreUp = 54,
+  AddEffectValueAudienceAmountReduction = 55,
+  WeaknessEffectReflection = 56,
+  BeatBoost = 57,
   DanceDown = 1001,
   VocalDown = 1002,
   VisualDown = 1003,
@@ -1792,6 +2265,9 @@ export enum StatusEffectType {
   StaminaContinuousConsumption = 1007,
   StrengthEffectGradeLimit = 1008,
   PassiveSkillImpossible = 1009,
+  AddEffectValueDanceDown = 1010,
+  AddEffectValueVocalDown = 1011,
+  AddEffectValueVisualDown = 1012,
 }
 
 export enum StoryAdvPlayType {
@@ -1801,6 +2277,7 @@ export enum StoryAdvPlayType {
   VerticalAdv = 3,
   VerticalMovie = 4,
   HorizontalMovie = 5,
+  Branch = 6,
 }
 
 export enum StoryPartType {
@@ -1912,4 +2389,23 @@ export enum TutorialType {
   MarathonRaid = 31,
   League = 32,
   CardRank = 33,
+  Love = 34,
+  Anniversary = 35,
+  DreamBasePhotoChoose = 36,
+  DreamGeneratedAreaPhotoChoose = 37,
+  Shelf = 38,
+  CompanyEnjoyBonusMemoriesCharacter = 39,
+  StaffLevelLimitBreak = 40,
+  Company = 41,
+  Showcase = 42,
+  ShowcaseGallery = 43,
+  CompanyEnjoy = 44,
+  CardEvolution = 45,
+  PhotoExpression = 46,
+  Satellite = 47,
+}
+
+export enum WatchAdvertisementType {
+  Unknown = 0,
+  Roulette = 1,
 }

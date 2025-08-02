@@ -1,17 +1,17 @@
 {
   "name": "hoshimi-venus",
   "version": "0.21.2",
-  "author": "vibbit (https://github.com/MalitsPlus)",
+  "author": "vibbit (https://github.com/vilebbit)",
   "description": "Venus System Library (tentative)",
   "keywords": [],
   "license": "Apache-2.0",
-  "homepage": "https://github.com/MalitsPlus/VenusSysLib",
+  "homepage": "https://github.com/vilebbit/VenusSysLib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MalitsPlus/VenusSysLib.git"
+    "url": "https://github.com/vilebbit/VenusSysLib.git"
   },
   "bugs": {
-    "url": "https://github.com/MalitsPlus/VenusSysLib/issues"
+    "url": "https://github.com/vilebbit/VenusSysLib/issues"
   },
   "main": "./out/index.js",
   "types": "./out/index.d.ts",

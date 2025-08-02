@@ -46,7 +46,7 @@ jobs:
   #     - name: Checkout HoshimiStage
   #       uses: actions/checkout@v3
   #       with:
-  #         repository: MalitsPlus/HoshimiStage
+  #         repository: vilebbit/HoshimiStage
   #         path: HoshimiStage
   #         token: ${{ secrets.PAT_TOKEN }}
   #         ref: main
@@ -72,4 +72,4 @@ jobs:
   #         git push origin "venus_${version}"
 
   #         echo ${{ secrets.PAT_TOKEN }} | gh auth login --with-token
-  #         gh pr create --base "main" --head "venus_${version}" -l "venus" --title "upgrade venus to ${version}" --body "***This pull-request was automatically triggered by [VenusSysLib](https://github.com/MalitsPlus/VenusSysLib).***"
+  #         gh pr create --base "main" --head "venus_${version}" -l "venus" --title "upgrade venus to ${version}" --body "***This pull-request was automatically triggered by [VenusSysLib](https://github.com/vilebbit/VenusSysLib).***"
