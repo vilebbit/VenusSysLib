@@ -64,7 +64,7 @@ jobs:
 
   #         python upgrade_venus.py ${version}
 
-  #         git config user.name "hoshimi-venus"
+  #         git config user.name "hoshimi-desk"
   #         git config user.email "anonymous@e.mail"
           
   #         git add .

@@ -1,8 +1,8 @@
-[![npm version](https://badge.fury.io/js/hoshimi-venus.svg)](https://badge.fury.io/js/hoshimi-venus)
+[![npm version](https://badge.fury.io/js/hoshimi-desk.svg)](https://badge.fury.io/js/hoshimi-desk)
 
 # VenusSysLib
 
-[**hoshimi-venus**](https://www.npmjs.com/package/hoshimi-venus) (project name: **VenusSysLib**) was a common Node.js library used for simulating in-game Live. The project has currently ceased development. 
+[**hoshimi-desk**](https://www.npmjs.com/package/hoshimi-desk) (project name: **VenusSysLib**) was a common Node.js library used for simulating in-game Live. The project has currently ceased development. 
 
 ## License
 Apache License 2.0
